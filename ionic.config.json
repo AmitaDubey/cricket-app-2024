@@ -1,0 +1,7 @@
+{
+  "name": "cricket-app-2024",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
