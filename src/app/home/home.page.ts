@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlayerService } from '../service/player.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {console.log('Hello')}
+  constructor(private playerService: PlayerService) {console.log('Hello')}
+
+  show(){
+    this.playerService.addPlayers(5);
+  }
 
 }
