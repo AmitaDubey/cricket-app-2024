@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'add-player',
+    loadChildren: () => import('./add-player/add-player.module').then( m => m.AddPlayerPageModule)
+  }
 ];
 
 @NgModule({
